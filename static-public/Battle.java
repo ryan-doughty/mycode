@@ -3,7 +3,7 @@ public class Battle {
         System.out.println("Bonk the Destroyer!");
     }
 
-    static int enemyHP() {
+    static public int enemyHP() {
         return 100;
     }
 
