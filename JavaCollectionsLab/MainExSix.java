@@ -10,7 +10,7 @@ public class MainExSix {
         fruits.add("Cherry");
 
         List<String> filteredFruits = fruits.stream()
-                                            .filter(fruit -> fruit.contains("a"))
+                                            .filter(fruit -> fruit.toLowerCase().contains("a"))
                                             .sorted()
                                             .collect(Collectors.toList());
 
