@@ -10,10 +10,10 @@ import java.io.IOException;
 public class SyncGet {
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        // 1. Create an HttpClient
+        // 1. Create an HttpClient--Like UPS
         HttpClient client = HttpClient.newHttpClient();
 
-        // 2. Build the HttpRequest
+        // 2. Build the HttpRequest--The package you send through UPS
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("http://api.open-notify.org/astros.json")) // Replace with your API endpoint
                 .header("Content-Type", "application/json") // Example header
